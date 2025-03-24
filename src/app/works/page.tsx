@@ -140,9 +140,9 @@ export default function WorksPage() {
               <button
                 key={cat}
                 onClick={() => setSelectedCategory(cat)}
-                className={`px-4 py-2 rounded-full text-sm font-bold transition-colors ${
+                className={`px-4 py-2 rounded-full text-sm font-bold transition-colors cursor-pointer ${
                   selectedCategory === cat
-                    ? "bg-brand-900 text-xl"
+                    ? "bg-brand-900 text-xl "
                     : "bg-white text-brand-600 hover:bg-brand-100 dark:bg-brand-700 dark:text-brand-300 dark:hover:bg-brand-600"
                 }`}
               >
