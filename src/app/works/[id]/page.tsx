@@ -12,8 +12,12 @@ export function generateStaticParams() {
   }));
 }
 
-export default function WorkDetailPage({ params }: { params: { id: string } }) {
-  const { id } = params;
+export default async function WorkDetailPage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
   const work = works.find((w) => w.id === id);
 
   if (!work) {
