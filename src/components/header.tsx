@@ -69,25 +69,28 @@ export function Header() {
             <nav className="flex flex-col space-y-4 text-center">
               <Link
                 href="/"
+                onClick={() => setIsMenuOpen(false)}
                 className="text-brand-600 hover:text-brand-900 dark:text-brand-300 dark:hover:text-white"
               >
                 ホーム
               </Link>
               <Link
                 href="/about"
+                onClick={() => setIsMenuOpen(false)}
                 className="text-brand-600 hover:text-brand-900 dark:text-brand-300 dark:hover:text-white"
               >
                 会社概要
               </Link>
               <Link
                 href="/works"
+                onClick={() => setIsMenuOpen(false)}
                 className="text-brand-600 hover:text-brand-900 dark:text-brand-300 dark:hover:text-white"
               >
                 実績
               </Link>
               <Button variant="outline" className="w-full" asChild>
                 <a
-                  href={process.env.GOOGLE_FORM_URL}
+                  href={process.env.NEXT_PUBLIC_GOOGLE_FORM_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

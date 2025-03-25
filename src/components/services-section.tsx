@@ -143,15 +143,6 @@ export function ServicesSection() {
               <p className="text-brand-600 dark:text-brand-300 mb-4 flex-grow">
                 {service.description}
               </p>
-              <Link
-                href={`/services#${service.title
-                  .toLowerCase()
-                  .replace(/\s+/g, "-")}`}
-                className="inline-flex items-center text-brand-900 dark:text-brand-100 hover:text-brand-700 dark:hover:text-white font-medium mt-2"
-              >
-                詳細を見る
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
             </div>
           ))}
         </div>

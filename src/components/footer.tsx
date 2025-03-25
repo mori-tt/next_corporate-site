@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Instagram, Twitter, Linkedin, Facebook } from "lucide-react";
+import { Button } from "./ui/button";
 
 export function Footer() {
   return (
@@ -17,28 +18,28 @@ export function Footer() {
             </p>
             <div className="flex space-x-4 justify-center">
               <a
-                href="https://instagram.com"
+                href=""
                 className="text-brand-600 hover:text-brand-900 dark:text-brand-300 dark:hover:text-white transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram size={20} />
               </a>
               <a
-                href="https://twitter.com"
+                href=""
                 className="text-brand-600 hover:text-brand-900 dark:text-brand-300 dark:hover:text-white transition-colors"
                 aria-label="Twitter"
               >
                 <Twitter size={20} />
               </a>
               <a
-                href="https://linkedin.com"
+                href=""
                 className="text-brand-600 hover:text-brand-900 dark:text-brand-300 dark:hover:text-white transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={20} />
               </a>
               <a
-                href="https://facebook.com"
+                href=""
                 className="text-brand-600 hover:text-brand-900 dark:text-brand-300 dark:hover:text-white transition-colors"
                 aria-label="Facebook"
               >
@@ -59,10 +60,21 @@ export function Footer() {
                 <br />
                 ＊＊＊ビル5F
               </p>
-              <p className="mb-4 text-center">
-                TEL: <a href="tel:03-1234-5678">03-1234-5678</a>
-              </p>
             </address>
+            <div className="flex justify-center">
+              <a href="tel:03-1234-5678">TEL: 03-1234-5678</a>
+            </div>
+            <div className="flex justify-center mt-6 cursor-pointer">
+              <Button variant="outline" asChild>
+                <a
+                  href={process.env.GOOGLE_FORM_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  お問い合わせ
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
 
