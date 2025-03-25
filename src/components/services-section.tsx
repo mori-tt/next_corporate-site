@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useRef, useEffect, useState } from "react";
-import Link from "next/link";
 import {
   Palette,
   Globe,
@@ -10,7 +9,6 @@ import {
   PenTool,
   Brush,
   LucideIcon,
-  ArrowRight,
   Feather,
 } from "lucide-react";
 
